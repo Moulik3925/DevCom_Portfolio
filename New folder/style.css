@@ -1,0 +1,249 @@
+html{
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(yellow, red);
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%); */
+    background: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+    background-image:url(NEUMORPHIC_CIRCLES_BACKGROUND.jpg);
+    color: #f9f9f9d4;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    margin-bottom: 10px;
+    
+}
+.heading{
+    text-align: center;
+    color: #fff;
+    font-size: 42px;
+    text-wrap: nowrap;
+    /* margin-left:5% ; */
+    font-family: "Caveat",cursive;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    column-gap:80px;
+}
+.titleimg{
+    /* display: inline-block; */
+    width: 600px;
+    height: 60px;
+    align-self:center;
+    z-index: 1001;
+}
+.logo {
+    display: flex;
+    column-gap: 5%;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-items: center;
+}
+.logoimg{
+    height:60px;
+}
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 4rem; /* Adjust margin for smaller screens */
+}
+
+.nav-links a {
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #ffd700;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    vertical-align: middle;
+    color: white;
+    padding: 0;
+    background-color: inherit;
+    font-family: inherit;
+    margin:0;
+    text-wrap: nowrap;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:rgb(58, 59, 79);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    color:#fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: rgb(63, 76, 119);
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.hero {
+    background-size: cover;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    justify-content: space-between;
+    margin-right: 0px;
+    margin-top: 60px;
+    text-align: left;
+    width: 100%;
+    text-wrap: pretty;
+    /* margin: 0 auto; */
+    font-size: 19px;
+    padding: 5rem 0;
+    line-height: 30px;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* flex: 1;
+    flex-wrap: nowrap; */
+    /* position: fixed; */
+}
+.content>.text{
+    flex-shrink: 0;
+    flex-grow: 1;
+    max-width: 60%;
+}
+
+.sideimage{
+    width: 577.312px;
+    border-radius: 16px;
+    align-self: center;
+    flex-grow: 1;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+.contact-form {
+    /* display: flex;
+    flex-direction: column; */
+    max-width: 400px;
+    margin: auto;
+    margin-bottom: 80px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.Contact-title{
+    color:#333;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-form input,.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize:none;
+}
+
+.contact-form button {
+    margin-left: 110px;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #267bb5;
+}
+
+.footer {
+    background-color: rgb(19, 19, 19); /* Black background color */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin-top: auto;
+    bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 1200px;
+}
+
+/* You can add more styles to the footer content as needed */
